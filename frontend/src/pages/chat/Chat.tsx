@@ -12,7 +12,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import styles from './Chat.module.css'
-import Contoso from '../../assets/Contoso.svg'
+import InfraIntel from '../../assets/InfraIntel.svg'
 import { XSSAllowTags } from '../../constants/sanatizeAllowables'
 
 import {
@@ -108,7 +108,7 @@ const Chat = () => {
 
   useEffect(() => {
     if (!appStateContext?.state.isLoading) {
-      setLogo(ui?.chat_logo || ui?.logo || Contoso)
+      setLogo(ui?.chat_logo || ui?.logo || InfraIntel)
     }
   }, [appStateContext?.state.isLoading])
 
@@ -580,7 +580,7 @@ const Chat = () => {
         // Returning the prettified error message
         if (reason !== '') {
           return (
-            'The prompt was filtered due to triggering Azure OpenAI’s content filtering system.\n' +
+            'The prompt was filtered due to triggering Azure OpenAI's content filtering system.\n' +
             'Reason: This prompt contains content flagged as ' +
             reason +
             '\n\n' +
