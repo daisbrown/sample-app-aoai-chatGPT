@@ -1,4 +1,5 @@
 import { chatHistorySampleData } from '../constants/chatHistory'
+import { mockFrontendSettings } from './mockSettings'
 
 import { ChatMessage, Conversation, ConversationRequest, CosmosDBHealth, CosmosDBStatus, UserInfo } from './models'
 
@@ -327,6 +328,7 @@ export const frontendSettings = async (): Promise<Response | null> => {
 
   return response
 }
+
 export const historyMessageFeedback = async (messageId: string, feedback: string): Promise<Response> => {
   const response = await fetch('/history/message_feedback', {
     method: 'POST',

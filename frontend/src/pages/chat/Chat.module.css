@@ -20,10 +20,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(108.78% 108.78% at 50.02% 19.78%, #ffffff 57.29%, #eef6fe 100%);
+  background: #2d2d2d;
   box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 4px rgba(0, 0, 0, 0.3),
+    0px 0px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow-y: auto;
   max-height: calc(100vh - 100px);
@@ -47,6 +47,7 @@
   line-height: 24px;
   margin-top: 36px;
   margin-bottom: 0px;
+  color: #ffffff;
 }
 
 .chatEmptyStateSubtitle {
@@ -58,7 +59,7 @@
   align-items: flex-end;
   text-align: center;
   letter-spacing: -0.01em;
-  color: #616161;
+  color: #e0e0e0;
 }
 
 .chatIcon {
@@ -88,16 +89,16 @@
   position: relative;
   display: flex;
   padding: 20px;
-  background: #edf5fd;
+  background: #404040;
   border-radius: 8px;
   box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 4px rgba(0, 0, 0, 0.2),
+    0px 0px 2px rgba(0, 0, 0, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #242424;
+  color: #ffffff;
   order: 0;
   flex-grow: 0;
   white-space: pre-wrap;
@@ -117,7 +118,7 @@
   box-shadow:
     rgba(182, 52, 67, 1) 1px 1px 2px,
     rgba(182, 52, 67, 1) 0px 0px 1px;
-  color: #242424;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -135,6 +136,7 @@
   word-wrap: break-word;
   gap: 12px;
   align-items: center;
+  color: #ffffff;
 }
 
 .chatInput {
@@ -211,14 +213,15 @@
   height: 32px;
   left: calc(50% - 161px / 2 + 25.8px);
   bottom: 116px;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #404040;
   border-radius: 16px;
+  background: #2d2d2d;
 }
 
 .stopGeneratingIcon {
   width: 14px;
   height: 14px;
-  color: #424242;
+  color: #ffffff;
 }
 
 .stopGeneratingText {
@@ -230,7 +233,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #242424;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -242,10 +245,10 @@
   align-items: flex-start;
   padding: 16px 16px;
   gap: 8px;
-  background: #ffffff;
+  background: #2d2d2d;
   box-shadow:
-    0px 2px 4px rgba(0, 0, 0, 0.14),
-    0px 0px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 4px rgba(0, 0, 0, 0.2),
+    0px 0px 2px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   flex: auto;
   order: 0;
@@ -265,7 +268,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -274,11 +277,11 @@
 .citationPanelDismiss {
   width: 18px;
   height: 18px;
-  color: #424242;
+  color: #ffffff;
 }
 
 .citationPanelDismiss:hover {
-  background-color: #d1d1d1;
+  background-color: #404040;
   cursor: pointer;
 }
 
@@ -287,7 +290,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #323130;
+  color: #ffffff;
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -302,7 +305,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #e0e0e0;
   flex: none;
   order: 1;
   align-self: stretch;
@@ -313,7 +316,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #404040;
   margin-top: 12px;
 }
 
@@ -331,15 +334,18 @@
   gap: 4px;
   margin: 0;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .exectResultList > span {
   font-weight: 600;
+  color: #ffffff;
 }
 
 a {
   padding-left: 5px;
   padding-right: 5px;
+  color: #8dddd8;
 }
 
 .viewSourceButton {
@@ -347,18 +353,20 @@ a {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #115ea3;
+  color: #8dddd8;
   flex-direction: row;
   align-items: center;
   padding: 4px 6px;
   gap: 4px;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #404040;
   border-radius: 4px;
+  background: #2d2d2d;
 }
 
 .viewSourceButton:hover {
   text-decoration: underline;
   cursor: pointer;
+  background: #404040;
 }
 
 .uploadedImageChat {
